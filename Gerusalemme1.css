@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.byjasson{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: orangered;
+    opacity: .5;
+    position:static
+}
+body{
+    font-family: 'Roboto', 'Sans serif';
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to right, #0c2577, #60086b);
+    position: relative;
+    overflow: hidden;
+}
+
+/*.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+*/
+
+
+
+    
+    .button{position:relative;padding:1em 1.5em;border:none;background-color:transparent;cursor:pointer;outline:0;font-size:18px;margin:1em .8em}
+    .button.type1{color:#ffffff}
+    .button.type1.type1::after,.button.type1.type1::before{content:"";display:block;position:absolute;width:20%;height:20%;border:2px solid;transition:all .6s ease;border-radius:2px}
+    .button.type1.type1::after{bottom:0;right:0;border-color:transparent #9715be #9715be transparent}
+    .button.type1.type1::before{top:0;left:0;border-color:#0829be transparent transparent #0829be}
+    .button.type1.type1:hover:after,.button.type1.type1:hover:before{width:100%;height:100%}
+    .button.type2{color:#16a085}
+    .button.type2.type2:after,.button.type2.type2:before{content:"";display:block;position:absolute;top:100%;left:0;width:100%;height:2px;background-color:#16a085;transition:all .3s ease;transform:scale(0.85)}
+    .button.type2.type2:hover:before{top:0;transform:scale(1)}
+    .button.type2.type2:hover:after{transform:scale(1)}
+    .button.type3{color:#ffffff}
+    .button.type3.type3::after,.button.type3.type3::before{content:"";display:block;position:absolute;width:20%;height:20%;border:2px solid;transition:all .6s ease;border-radius:2px}
+    .button.type3.type3::after{bottom:0;right:0;border-color:transparent #0829be #0829be transparent}
+    .button.type3.type3::before{top:0;left:0;border-color:#0ebe08 transparent transparent #0ebe08}
+    .button.type3.type3:hover:after,.button.type3.type3:hover:before{border-color:#9715be;width:100%;height:100%}
+    
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header_nav h1{
+    color: #fff;
+    font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+
+}
+
+.banner_title h2{
+    color: #fff;
+    font-size: 120px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 140px;
+}
+
+.banner_title .llamanos{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(to right, #1633b4, #248baa ) ;
+    padding: 15px;
+    position: relative;
+    margin-left: 445px;
+    margin-bottom: 75px;
+    font-style: verdana;
+
+    
+}
+
+.banner_img{
+    animation: step-start;
+    position: relative;
+}
+
+.banner_img img{
+    width: 850px;
+    height: 400px;
+    display: initial;
+}
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 4%;
+    background: rgb(202, 49, 11);
+    opacity: .1;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 4s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+              .burbuja:nth-child(7){
+                       width: 20px;
+                   height: 20px;
+                  left: 50%;
+                 animation-duration: 4s;
+                animation-delay: 5s;
+                        }
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+                               .burbuja:nth-child(9){
+                              width: 65px;
+                             height: 65px;
+                            left: 51%;
+                           animation-duration: 3s;
+                          animation-delay: 2s;
+                          }
+
+                    .burbuja:nth-child(10){
+                   width: 40px;
+                    height: 40px;
+                     left: 35%;
+                     animation-duration: 3s;
+                    animation-delay: 4s;
+                    }
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.pcolor{
+    color: rgb(66, 66, 66);
+    font-family: Verdana;
+    position: center
+    
+}
+ .button.type1{
+     margin-top: 20px;
+ }
+
+ 
+
+
+
+.nubes {
+	width: 320px;
+	height: 320px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-top: 600px;
+    margin-left: 200px;
+}
+
+.nubes img {
+	position: relative;
+	z-index: 20;
+    width: 340px;
+    height: 340px;
+}
+
+.tierra {
+	width: 200px;
+	height: 200px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+
+	border-radius: 50%;
+	box-shadow: -30px -30px 0 -10px rgba(0,0,0,.15) inset,
+				-60px -20px 0 0 rgba(0,0,0,.1) inset,
+				5px 5px 0 0 rgba(255,255,255,.2) inset;
+
+	background: url(mapa1.png);
+	background-size: cover;
+
+	animation: tierra-girando 20s infinite linear;
+}
+.nubes .tierra{
+    width: 320px;
+    height: 320px;
+}
+
+@keyframes tierra-girando {
+	from {
+		background-position: 0 center;
+	}
+
+	to {
+		background-position: -398px center;
+	}
+}
+
+.d6 .p6{
+    width: 550px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 700px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+}
+.p6{
+    margin-top: 50px;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+
+
+.body3{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: 360px;
+    margin-bottom: 100px;
+    
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #585858;
+    
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(133, 14, 212, 0.658);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #0097fc;
+}
+h4{
+    color: rgb(0, 0, 0);
+    margin-left: 100;
+}
+.p1{
+    color: ivory;
+}
+
+.d6 img{
+    width: 550px;
+    height: 300px;
+    margin-left: 40px;
+    border-radius: 600px;
+}
+.gif1{
+    background-image: url(bck.gif);
+}
